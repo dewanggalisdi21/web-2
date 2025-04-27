@@ -1,0 +1,25 @@
+1. Jelaskan apa yang dimaksud dengan dokumen root ?
+2. Pada apache web server, apakah dokumen root harus terletak dalam direktori
+C:\xampp\htdocs ? Jelaskan jawaban anda
+3. Jelaskan apa yang dimaksud dengan perintah git : init, clone, remote, add, commit, push
+dan checkout
+4. Jelaskan perbedaan antara GitHub dan GitLab
+5. Apa bedanya variable user dengan variable system ?
+6. Apa persamaan variable system dengan variable constant ?
+
+Jawaban:
+1. Dokumen root adalah elemen atau direktori utama dalam suatu sistem file, server, atau struktur dokumen yang menjadi dasar bagi semua kontennya
+2. Dokumen root dalam Apache tidak harus selalu berada di C:\xampp\htdocs, karena bisa diubah sesuai kebutuhan dengan mengedit file konfigurasi httpd.conf atau menggunakan Virtual Hosts untuk mendukung banyak situs dalam satu server
+3. git init: digunakan untuk membuat repository baru dalam sebuah proyek
+   git clone: digunakan untuk menyalin repository Git yang sudah ada dari server atau repository lain
+   git remote: digunakan untuk mengelola daftar remote repository yang terhubung dengan repository lokal
+   git add: digunakan untuk menambahkan file ke staging area, sehingga siap untuk di-commit
+   git commit: digunakan untuk menyimpan perubahan yang sudah ditambahkan ke staging area ke repository lokal
+   git push: digunakan untuk mengirim perubahan dari repository lokal ke remote repository (GitHub, GitLab, dll.)
+   git checkout: digunakan untuk berpindah antar branch atau commit tertentu dalam repository
+4. Gunakan GitHub jika ingin kolaborasi sederhana, proyek open-source, dan komunitas yang besar.
+Gunakan GitLab jika memerlukan CI/CD bawaan, kontrol penuh dengan self-hosting, atau pengelolaan proyek yang lebih kompleks
+5. Variabel User hanya berlaku untuk pengguna tertentu dan bisa diubah tanpa memengaruhi pengguna lain.
+Variabel System berlaku untuk semua pengguna di sistem dan memerlukan hak admin untuk diubah.
+6. Variabel System digunakan dalam sistem operasi untuk konfigurasi dan bisa diubah oleh pengguna atau admin.
+Variabel Constant digunakan dalam pemrograman untuk menyimpan nilai tetap yang tidak boleh berubah selama program berjalan.
