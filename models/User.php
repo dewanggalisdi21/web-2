@@ -6,7 +6,6 @@ require_once __DIR__ . '/../config/Connection.php';
 
 use config\Connection;
 use PDO;
-use PDOException;
 
 class User
 {
@@ -17,10 +16,11 @@ class User
         $statement = $pdo->query($sql);
         return $statement->fetchAll(PDO::FETCH_ASSOC);
     }
+
     public static function create($data)
     {
         $pdo = Connection::make();
-        $sql = 'INSERT INTO users (firstname, lastname, gender, age, weight) VALUES (:firstname,:lastname, :gender, :age, :weight)';
+        $sql = 'INSERT INTO users (firstname, lastname, gender, age, weight) VALUES (:firstname, :lastname, :gender, :age, :weight)';
         $statement = $pdo->prepare($sql);
         $statement->bindParam(':firstname', $data['firstname']);
         $statement->bindParam(':lastname', $data['lastname']);
@@ -30,14 +30,15 @@ class User
 
         return $statement->execute();
 
-        //return $statement->execute([
-        //    ':firstname' => $data['firstname'],
-        //    ':lastname' => $data['lastname'],
-        //    ':gender' => $data['gender'],
-        //    ':age' => $data['age'],
-        //   ':weight' => $data['weight'],
-        //]);
+        // return $statement->execute([
+        //     ':firstname' => $data['firstname'],
+        //     ':lastname' => $data['lastname'],
+        //     ':gender' => $data['gender'],
+        //     ':age' => $data['age'],
+        //     ':weight' => $data['weight'],
+        // ]);
     }
+
     public static function find($id)
     {
         $pdo = Connection::make();

@@ -16,6 +16,7 @@ if (isset($_POST['submit'])) {
     header("Location: list-user.php");
     exit;
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -75,7 +76,7 @@ if (isset($_POST['submit'])) {
                 </div>
                 <div class="sb-sidenav-footer">
                     <div class="small">Logged in as:</div>
-                    Muhammad Ja'far Shodiq
+                    Huda Salam
                 </div>
             </nav>
         </div>
@@ -86,7 +87,7 @@ if (isset($_POST['submit'])) {
                     <ol class="breadcrumb mb-4">
                         <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
                         <li class="breadcrumb-item"><a href="list-user.php">User</a></li>
-                        <li class="breadcrumb-item active"></li>Add User
+                        <li class="breadcrumb-item active">Add User</li>
                     </ol>
                     <div class="card mb-4">
                         <div class="card-header">
@@ -97,42 +98,34 @@ if (isset($_POST['submit'])) {
                             <form action="create-user.php" method="POST">
                                 <div class="mb-3">
                                     <label for="firstname" class="form-label">First Name</label>
-                                    <input type="text" class="form-control" id="firstname"
-                                        name="firstname" required>
+                                    <input type="text" class="form-control" id="firstname" name="firstname" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="lastname" class="form-label">Last Name</label>
-                                    <input type="text" class="form-control" id="lastname"
-                                        name="lastname" required>
+                                    <input type="text" class="form-control" id="lastname" name="lastname" required>
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label d-block">Gender</label>
                                     <div class="form-check form-check-inline">
-                                        <input type="radio" class="form-check-input"
-                                            name="gender" id="laki-laki" value="laki-laki">
-                                        <label for="laki-laki"
-                                            class="form-check-label">Laki-Laki</label>
+                                        <input type="radio" class="form-check-input" name="gender" id="laki-laki" value="Laki-laki">
+                                        <label for="laki-laki" class="form-check-label">Laki-laki</label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input type="radio" class="form-check-input"
-                                            name="gender" id="perempuan" value="perempuan">
-                                        <label for="perempuan"
-                                            class="form-check-label">Perempuan</label>
+                                        <input type="radio" class="form-check-input" name="gender" id="perempuan" value="Perempuan">
+                                        <label for="perempuan" class="form-check-label">Perempuan</label>
                                     </div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="age" class="form-label">Age</label>
-                                    <input type="number" class="form-control" id="age"
-                                        name="age" min="0" max="100" required>
+                                    <input type="number" class="form-control" id="age" name="age" min="0" max="100" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="weight" class="form-label">Weight</label>
-                                    <input type="number" class="form-control" id="weight"
-                                        name="weight" min="0" max="100" required>
+                                    <input type="number" class="form-control" id="weight" name="weight" min="0" max="100" required>
                                 </div>
 
                                 <a href="list-user.php" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Back</a>
-                                <button type="submit" name="submit" class="btn btn-primary"><i class="fas fa-save"></i>Save</button>
+                                <button type="submit" name="submit" class="btn btn-primary"><i class="fas fa-save"></i> Save</button>
                             </form>
                         </div>
                     </div>

@@ -15,7 +15,6 @@ if (!$user) {
     exit;
 }
 
-
 ?>
 
 <!DOCTYPE html>
@@ -75,7 +74,7 @@ if (!$user) {
                 </div>
                 <div class="sb-sidenav-footer">
                     <div class="small">Logged in as:</div>
-                    Muhammad Ja'far Shodiq
+                    Huda Salam
                 </div>
             </nav>
         </div>
@@ -119,7 +118,7 @@ if (!$user) {
 
                             <div class="mt-3">
                                 <a href="list-user.php" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Back</a>
-                                <a href="edit-user.php?id=<?= $user['id'] ?>" class="btn btn-warning"><i class="fas fa-edit"></i> Edit</a>
+                                <a href="edit-user.php?id=<?= $user['id'] ?>" class="btn  btn-warning"><i class="fas fa-edit"></i> Edit</a>
                                 <a href="delete-user.php?id=<?= $user['id'] ?>" class="btn btn-danger"><i class="fas fa-trash"></i> Delete</a>
                             </div>
                         </div>

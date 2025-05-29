@@ -89,7 +89,7 @@ if (isset($_POST['submit'])) {
                 </div>
                 <div class="sb-sidenav-footer">
                     <div class="small">Logged in as:</div>
-                    Muhammad Ja'far Shodiq
+                    Huda Salam
                 </div>
             </nav>
         </div>
@@ -111,42 +111,34 @@ if (isset($_POST['submit'])) {
                             <form action="edit-user.php?id=<?= $user['id'] ?>" method="POST">
                                 <div class="mb-3">
                                     <label for="firstname" class="form-label">First Name</label>
-                                    <input type="text" class="form-control" id="firstname"
-                                        name="firstname" value="<?= $user['firstname'] ?>" required>
+                                    <input type="text" class="form-control" id="firstname" name="firstname" value="<?= $user['firstname'] ?>" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="lastname" class="form-label">Last Name</label>
-                                    <input type="text" class="form-control" id="lastname"
-                                        name="lastname" value="<?= $user['lastname'] ?>" required>
+                                    <input type="text" class="form-control" id="lastname" name="lastname" value="<?= $user['lastname'] ?>" required>
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label d-block">Gender</label>
                                     <div class="form-check form-check-inline">
-                                        <input type="radio" class="form-check-input"
-                                            name="gender" id="laki-laki" value="laki-laki" <?= $user['gender'] === 'Laki-Laki' ? 'checked' : '' ?>>
-                                        <label for="laki-laki"
-                                            class="form-check-label">Laki-Laki</label>
+                                        <input type="radio" class="form-check-input" name="gender" id="laki-laki" value="Laki-laki" <?= $user['gender'] === 'Laki-laki' ? 'checked' : '' ?>>
+                                        <label for="laki-laki" class="form-check-label">Laki-laki</label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input type="radio" class="form-check-input"
-                                            name="gender" id="perempuan" value="perempuan" <?= $user['gender'] === 'Perempuan' ? 'checked' : '' ?>>
-                                        <label for="perempuan"
-                                            class="form-check-label">Perempuan</label>
+                                        <input type="radio" class="form-check-input" name="gender" id="perempuan" value="Perempuan" <?= $user['gender'] === 'Perempuan' ? 'checked' : '' ?>>
+                                        <label for="perempuan" class="form-check-label">Perempuan</label>
                                     </div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="age" class="form-label">Age</label>
-                                    <input type="number" class="form-control" id="age"
-                                        name="age" min="0" max="100" value="<?= $user['age'] ?>" required>
+                                    <input type="number" class="form-control" id="age" name="age" min="0" max="100" value="<?= $user['age'] ?>" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="weight" class="form-label">Weight</label>
-                                    <input type="number" class="form-control" id="weight"
-                                        name="weight" min="0" max="100" value="<?= $user['weight'] ?>" required>
+                                    <input type="number" class="form-control" id="weight" name="weight" min="0" max="100" value="<?= $user['weight'] ?>" required>
                                 </div>
 
                                 <a href="list-user.php" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Back</a>
-                                <button type="submit" name="submit" class="btn btn-warning"><i class="fas fa-save"></i>Update</button>
+                                <button type="submit" name="submit" class="btn btn-warning"><i class="fas fa-save"></i> Update</button>
                             </form>
                         </div>
                     </div>

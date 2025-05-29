@@ -64,7 +64,7 @@ $users = User::get();
                 </div>
                 <div class="sb-sidenav-footer">
                     <div class="small">Logged in as:</div>
-                    Muhammad Ja'far Shodiq
+                    Huda Salam
                 </div>
             </nav>
         </div>
@@ -75,7 +75,6 @@ $users = User::get();
                     <ol class="breadcrumb mb-4">
                         <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
                         <li class="breadcrumb-item active">User</li>
-
                     </ol>
                     <div class="card mb-4">
                         <div class="card-header">
@@ -85,7 +84,7 @@ $users = User::get();
                         <div class="card-body">
                             <div class="mb-3 text-end">
                                 <a href="create-user.php" class="btn btn-success">
-                                    <i class="fas fa-plus"></i>Add User
+                                    <i class="fas fa-plus"></i> Add User
                                 </a>
                             </div>
                             <table id="datatablesSimple">
@@ -114,7 +113,7 @@ $users = User::get();
                                                     <i class="fas fa-edit"></i> Edit
                                                 </a>
 
-                                                <a href="delete-user.php?id=<?= $user['id'] ?>" class="btn btn-danger">
+                                                <a href="delete-user.php?id=<?= $user['id'] ?>" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this user?')">
                                                     <i class="fas fa-trash"></i> Delete
                                                 </a>
                                             </td>
